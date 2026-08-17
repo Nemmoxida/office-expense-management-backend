@@ -1,0 +1,52 @@
+[
+  {
+    "employee": "Kermit",
+    "employeeId": "123",
+    "profilePicId": "https://picsum.photos/seed/kermit/100",
+    "departement": "Programmer",
+    "claimId": "733272e8-666e",
+    "expenseTitle": "Github yearly subs",
+    "merchant": "github",
+    "expenseDesc": "Github annual subs",
+    "creationDate": "23-august-2026",
+    "category": "Software and tools ",
+    "amount": "2.000,00",
+    "status": "pending",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "Yuuna",
+    "employeeId": "123",
+    "profilePicId": "https://picsum.photos/seed/yuuna/100",
+    "departement": "Marketing",
+    "claimId": "c2b8d4b1-f92f",
+    "expenseTitle": "Canva premium renewal",
+    "merchant": "Canva",
+    "expenseDesc": "Canva for marketing design",
+    "creationDate": "26-august-2026",
+    "category": "Food and Beverage",
+    "amount": "2.000,00",
+    "status": "paid",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  }
+]
