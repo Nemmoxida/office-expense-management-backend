@@ -2,14 +2,14 @@
   {
     "employee": "Kermit",
     "employeeId": "123",
-    "profilePicId": "https://picsum.photos/seed/kermit/100",
+    "profilePicId": "https://picsum.photos/seed/Kermit/100",
     "departement": "Programmer",
     "claimId": "733272e8-666e",
     "expenseTitle": "Github yearly subs",
     "merchant": "github",
     "expenseDesc": "Github annual subs",
     "creationDate": "23-august-2026",
-    "category": "Software and tools ",
+    "category": "Software and tools",
     "amount": "2.000,00",
     "status": "pending",
     "imageId": ".com",
@@ -26,17 +26,217 @@
   },
   {
     "employee": "Yuuna",
-    "employeeId": "123",
-    "profilePicId": "https://picsum.photos/seed/yuuna/100",
+    "employeeId": "456",
+    "profilePicId": "https://picsum.photos/seed/Yuuna/100",
     "departement": "Marketing",
     "claimId": "c2b8d4b1-f92f",
     "expenseTitle": "Canva premium renewal",
     "merchant": "Canva",
     "expenseDesc": "Canva for marketing design",
     "creationDate": "26-august-2026",
-    "category": "Food and Beverage",
+    "category": "Software and tools",
     "amount": "2.000,00",
     "status": "paid",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "Marcus",
+    "employeeId": "789",
+    "profilePicId": "https://picsum.photos/seed/Marcus/100",
+    "departement": "Design",
+    "claimId": "a7f2c9d1-e4a8",
+    "expenseTitle": "Adobe Creative Cloud subscription",
+    "merchant": "Adobe",
+    "expenseDesc": "Annual Creative Cloud for design work",
+    "creationDate": "12-august-2026",
+    "category": "Software and tools",
+    "amount": "3.500,00",
+    "status": "approved",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "Sarah",
+    "employeeId": "234",
+    "profilePicId": "https://picsum.photos/seed/Sarah/100",
+    "departement": "Human Resources",
+    "claimId": "b5e8f3c2-a1d6",
+    "expenseTitle": "Team lunch meeting",
+    "merchant": "The Olive Garden",
+    "expenseDesc": "Team building lunch with HR department",
+    "creationDate": "18-august-2026",
+    "category": "Food and Beverage",
+    "amount": "450,50",
+    "status": "pending",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "David",
+    "employeeId": "567",
+    "profilePicId": "https://picsum.photos/seed/David/100",
+    "departement": "Finance",
+    "claimId": "c9a4b7e1-f5d2",
+    "expenseTitle": "Accounting software license",
+    "merchant": "QuickBooks",
+    "expenseDesc": "Professional accounting software annual subscription",
+    "creationDate": "15-august-2026",
+    "category": "Software and tools",
+    "amount": "1.800,00",
+    "status": "rejected",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "Emma",
+    "employeeId": "345",
+    "profilePicId": "https://picsum.photos/seed/Emma/100",
+    "departement": "Sales",
+    "claimId": "d3f6a8c4-b2e9",
+    "expenseTitle": "Client dinner entertainment",
+    "merchant": "Nobu Restaurant",
+    "expenseDesc": "Business dinner with major client",
+    "creationDate": "20-august-2026",
+    "category": "Travel and Entertainment",
+    "amount": "850,00",
+    "status": "paid",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "James",
+    "employeeId": "678",
+    "profilePicId": "https://picsum.photos/seed/James/100",
+    "departement": "Operations",
+    "claimId": "e7d2c1b5-a9f3",
+    "expenseTitle": "Office supplies purchase",
+    "merchant": "Staples",
+    "expenseDesc": "Monthly office supplies and stationery",
+    "creationDate": "14-august-2026",
+    "category": "Office Supplies",
+    "amount": "325,75",
+    "status": "approved",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "Lisa",
+    "employeeId": "901",
+    "profilePicId": "https://picsum.photos/seed/Lisa/100",
+    "departement": "Product Management",
+    "claimId": "f1e8a9d7-c4b6",
+    "expenseTitle": "Conference registration",
+    "merchant": "Tech Summit 2026",
+    "expenseDesc": "Annual tech conference attendance and registration",
+    "creationDate": "10-august-2026",
+    "category": "Professional Development",
+    "amount": "1.200,00",
+    "status": "pending",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "Robert",
+    "employeeId": "432",
+    "profilePicId": "https://picsum.photos/seed/Robert/100",
+    "departement": "Engineering",
+    "claimId": "a2b9c7d4-e1f5",
+    "expenseTitle": "Database management tool",
+    "merchant": "DataGrip",
+    "expenseDesc": "Professional database IDE subscription",
+    "creationDate": "22-august-2026",
+    "category": "Software and tools",
+    "amount": "1.100,00",
+    "status": "paid",
+    "imageId": ".com",
+    "auditHistory": [
+      {
+        "status": "accepted",
+        "username": "yuuna",
+        "role": "finance",
+        "dateTime": "7pm",
+        "action": "Approved",
+        "message": "Approved for business purpose"
+      }
+    ]
+  },
+  {
+    "employee": "Michelle",
+    "employeeId": "555",
+    "profilePicId": "https://picsum.photos/seed/Michelle/100",
+    "departement": "Marketing",
+    "claimId": "b4a1f8e6-d3c2",
+    "expenseTitle": "Social media campaign",
+    "merchant": "Buffer Analytics",
+    "expenseDesc": "Social media management platform annual plan",
+    "creationDate": "19-august-2026",
+    "category": "Marketing",
+    "amount": "600,00",
+    "status": "approved",
     "imageId": ".com",
     "auditHistory": [
       {
