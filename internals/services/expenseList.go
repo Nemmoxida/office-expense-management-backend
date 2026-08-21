@@ -15,6 +15,7 @@ func NewExpenseList() *ExpenseList {
 }
 
 func (e *ExpenseList) GetExpenseList(c *gin.Context) {
+
 	data, err := os.ReadFile("dummy.json")
 
 	if err != nil {

@@ -1,23 +1,24 @@
 package services
 
 import (
-	"fmt"
+	"context"
 	"net/http"
+	"office-expense-management-backend/database"
 	"os"
 	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/joho/godotenv"
 )
 
 var secretKey = []byte(os.Getenv("JWT_SECRET"))
 
-func generateToken(username string) (string, error) {
+func generateToken(username string, departement string) (string, error) {
 	claims := jwt.MapClaims{
-		"sub":      "123",
-		"username": username,
-		"exp":      time.Now().Add(24 * time.Hour).Unix(),
+		"sub":         "123",
+		"username":    username,
+		"departement": departement,
+		"exp":         time.Now().Add(24 * time.Hour).Unix(),
 	}
 
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
@@ -36,22 +37,37 @@ type UserReq struct {
 }
 
 func Login(c *gin.Context) {
-	godotenv.Load()
 	var req UserReq
-	fmt.Print(secretKey)
 
 	c.ShouldBindJSON(&req)
 
-	if req.Username != "kermit" && req.Password != "123" {
-		c.JSON(http.StatusForbidden, gin.H{"error": "Wrong username or password"})
+	pool, err := database.Connect()
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"errorInternalDatabase": err})
 		return
 	}
 
-	token, err := generateToken(req.Username)
+	defer pool.Close()
+
+	row := pool.QueryRow(context.Background(), "SELECT username, password FROM users WHERE username = $1", req.Username)
+
+	var username, password, departement string
+
+	if err := row.Scan(&username, &password, &departement); err != nil {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "invalid credentials"})
+		return
+	}
+
+	if req.Password != password {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "invalid credentials"})
+		return
+	}
+
+	token, err := generateToken(username, departement)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err})
 		return
 	}
 
-	c.Data(http.StatusAccepted, "application/json", []byte(token))
+	c.JSON(http.StatusAccepted, gin.H{"token": token})
 }
